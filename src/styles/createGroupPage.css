@@ -1,0 +1,203 @@
+.create {
+    background-color: #FAFAFA; /* 전체 배경색을 상단 로고 배경과 동일하게 설정 */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* 화면 전체 높이 */
+      width: 100vw; /* 화면 전체 너비 */
+      flex-direction: column;
+  }
+  /* 전체 페이지 컨테이너 */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; /* 뷰포트 전체 높이 사용 */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* 로고 영역 */
+  .logo-content {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* 로고 이미지 */
+  .logo-content img {
+    width: 100px;
+  }
+  
+  /* 폼 컨테이너 */
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 폼 내부 내용을 중앙에 정렬 */
+    margin: 0 auto;
+  }
+  
+  /* 폼 제목 */
+  .form-container h3 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* 폼 그룹 */
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* 레이블 스타일 */
+  .form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+  }
+  
+  /* 입력 필드 스타일 */
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* 파일 업로드 컨테이너 */
+  .image-upload {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  /* 파일 업로드 텍스트 */
+  .file-label {
+    flex: 1;
+    color: #888;
+    margin-right: 10px;
+  }
+  
+  /* 파일 업로드 입력 */
+  .image-upload input[type="file"] {
+    display: none;
+  }
+  
+  /* 파일 업로드 버튼 */
+  .image-upload button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #282828;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* 텍스트 영역 스타일 */
+  .form-group textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* 가시성 옵션 스타일 */
+  .visibility-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  /* 비밀번호 입력 스타일 */
+  .form-group input[type="password"] {
+    margin-bottom: 20px;
+  }
+  
+  /* 그룹 만들기 버튼 스타일 */
+  .create-group {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #282828;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  /* 그룹 만들기 버튼 호버 스타일 */
+  .create-group:hover {
+    background-color: #218838;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    width: 480px;
+    height: 298px;
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .modal-content h3 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content p {
+    margin-bottom: 30px;
+  }
+  
+  .modal-content button {
+    width: 400px;
+    height: 50px;
+    background-color: #282828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .modal-content button:hover {
+    background-color: #218838;
+  }
+  
