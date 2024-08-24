@@ -6,8 +6,6 @@ import UploadMemoryModal from './components/UploadMemoryModal';
 import PrivateMemoryPermissionPage from './components/PrivateMemoryPermissionPage';
 import MemoryDetailPage from './components/MemoryDetailPage';
 import CreateGroupPage from './components/createGroupPage';
-import PasswordGroupPage from './components/passwordGroupPage';
-import ErrorPage from './components/errorPage';
 import UnifiedGroupPage from './components/unifiedGroupPage';
 
 
@@ -20,8 +18,6 @@ function App() {
         <Route path="/privatepermission" element={<PrivateMemoryPermissionPage />} />
         <Route path="/memorydetail" element={<MemoryDetailPage />} />
         <Route path="/creategroup" element={<CreateGroupPage />} />
-        <Route path="/passwordgroup" element={<PasswordGroupPage />} />
-        <Route path="/error" element={<ErrorPage />} />
         <Route path="/" element={<UnifiedGroupPage />} />
 
       </Routes>
